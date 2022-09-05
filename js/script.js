@@ -50,7 +50,8 @@ function computeSplit() {
         tipAmount.textContent = "$0.00";
         totalAmount.textContent = "$0.00";
     } else {
-        let newTotalAmount = parseFloat(billInput.value) / parseFloat(peopleInput.value);
+        let billValue = billInput.value.replace(/[^0-9]/g, ""), peopleValue = peopleInput.value.replace(/[^0-9]/g, "");
+        let newTotalAmount = parseFloat(billValue) / parseFloat(peopleValue);
         let newTipAmount = newTotalAmount * parseFloat(getSelectedTipOption()) / 100;
         tipAmount.textContent = `$${newTipAmount.toFixed(2)}`;
         totalAmount.textContent = `$${newTotalAmount.toFixed(2)}`;
