@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Frontend Mentor | Tip Calculator App</title>
+</head>
+<body>
+    <h1>Spli<br>tter</h1>
+    <main>
+        <div class="t-card__left">
+            <div class="t-card__bill">
+                <div class="t-card__label">
+                    <label>Bill</label>
+                    <span>Can't be zero</span>
+                </div>
+                <input type="text" placeholder="0.00" class="t-card__input" autocomplete="off">
+            </div>
+            <div class="t-card__percentage">
+                <div class="t-card__label">
+                    <label>Select Tip %</label>
+                </div>
+                <ul>
+                    <li>5%</li>
+                    <li>10%</li>
+                    <li>15%</li>
+                    <li>25%</li>
+                    <li>50%</li>
+                    <li class="t-card__percentage-input">
+                        <input type="text" placeholder="Custom" autocomplete="off" maxlength="4">
+                    </li>
+                </ul>
+            </div>
+            <div class="t-card__people">
+                <div class="t-card__label">
+                    <label>Number of People</label>
+                    <span>Can't be zero</span>
+                </div>
+                <input type="text" placeholder="0" class="t-card__input" autocomplete="off">
+            </div>
+        </div>
+        <div class="t-card__right">
+            <div class="t-card__tip">
+                <div class="t-card__tip-label">
+                    <strong>Tip Amount</strong>
+                    / person
+                </div>
+                <span class="t-card__tip-amount">$0.00</span>
+            </div>
+            <div class="t-card__total">
+                <div class="t-card__total-label">
+                    <strong>Total</strong>
+                    / person
+                </div>
+                <span class="t-card__total-amount">$0.00</span>
+            </div>
+            <button class="t-card__reset" disabled>Reset</button>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
